@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Calculadora de IMC</title>
+</head>
+
+<body>
+    <div class="container-general">
+        <h1>Tabela IMC</h1>
+        <table id="tabela">
+            <tr>
+                <th>IMC</th>
+                <th>Classificação</th>
+                <th>Obsidade(grau)</th>
+            </tr>
+            <tr id="magreza">
+                <td class="left border-left-radius">Menor que 18,5</td>
+                <td class="center">Magreza</td>
+                <td class="center border-right-radius">0</td>
+            </tr>
+            <tr id="normal">
+                <td class="left border-left-radius">Entre 18,5 e 24,9</td>
+                <td class="center">Normal</td>
+                <td class="center border-right-radius">0</td>
+            </tr>
+            <tr id="sobrepeso">
+                <td class="left border-left-radius">Entre 25,0 e 29,9</td>
+                <td class="center">Sobrepeso</td>
+                <td class="center border-right-radius">I</td>
+            </tr>
+            <tr id="obesidade">
+                <td class="left border-left-radius">Entre 30,0 e 39,9</td>
+                <td class="center">Obesidade</td>
+                <td class="center border-right-radius">II</td>
+            </tr>
+            <tr id="obsidadeGrave">
+                <td class="left border-left-radius">Maior que 40,0</td>
+                <td class="center">Obesidade Grave</td>
+                <td class="center border-right-radius">III</td>
+                </td>
+        </table>
+        <div class="container">
+            <h2>Calule seu IMC</h2>
+
+            <div class="input-group">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" placeholder="Digite seu nome" required maxlength="45">
+            </div>
+
+            <div class="input-group">
+                <label for="weight">Peso (kg):</label>
+                <input type="number" id="weight" placeholder="Digite seu peso">
+            </div>
+
+            <div class="input-group">
+                <label for="height">Altura (m):</label>
+                <input type="number" id="height" placeholder="Digite sua altura">
+            </div>
+            <button id="buttonCalculate" onclick="disableBtn()">Calcular IMC</button>
+            <div id="result">
+                Resultado <span id="spanIMC"></span>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

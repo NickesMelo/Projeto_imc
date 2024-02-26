@@ -1,0 +1,167 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.container-general {
+    max-width: 600px;
+    margin: 30px auto;
+    background-color: #fff;
+    padding: 50px;
+
+    border-radius: 8px;
+    -webkit-box-shadow: 0 0 5px;
+    box-shadow: 0 0 5px;
+    margin-bottom: 5px;
+
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
+    display: flex;
+    -ms-flex-line-pack: distribute;
+    align-content: space-around;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.container {
+    max-width: 450px;
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 8px;
+    -webkit-box-shadow: 0 0 5px;
+    box-shadow: 0 0 5px;
+}
+
+#tabela {
+    max-width: 450px;
+    border-spacing: 0 1px;
+    margin-bottom: 10px;
+}
+
+#tabela th,
+#tabela td {
+    padding: 2px;
+}
+
+#tabela th {
+    font-size: 18px;
+}
+
+.border-left-radius {
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.border-right-radius {
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.center {
+    text-align: center;
+}
+
+.left {
+    text-align: left;
+}
+
+h1,
+h2 {
+    text-align: center;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: 5px;
+}
+
+input,
+select {
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+button {
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#result {
+    margin-top: 5px;
+    padding: 5px;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.select {
+    background-color: #c6c6c6;
+    -webkit-transition: 2.5s;
+    -o-transition: 2.5s;
+    transition: 2s;
+}
+
+.imc-value {
+    padding: 1px;
+    border-radius: 5px;
+    color: #ffffff;
+}
+
+.imc-obesidade-grave {
+    background-color: red;
+}
+
+.imc-obesidade {
+    background-color: rgb(240, 188, 91);
+}
+
+.imc-sobrepeso {
+    background-color: rgb(207, 207, 86);
+}
+
+.imc-normal {
+    background-color: green;
+}
+
+.imc-magreza {
+    background-color: blue;
+}
